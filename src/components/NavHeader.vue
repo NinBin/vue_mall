@@ -45,10 +45,67 @@
           </div>
           <div class="item-menu">
             <span>RedMi红米</span>
-            
           </div>
           <div class="item-menu">
             <span>电视</span>
+            <div class="children">
+              <ul>
+                <li class="product">
+                  <a href="" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="'/imgs/nav-img/nav-3-1.jpg'" alt="">
+                    </div>
+                    <div class="pro-name">小米壁画电视 65英寸</div>
+                    <div class="pro-price">6999元</div>
+                  </a>
+                </li>
+                <li class="product">
+                  <a href="" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="'/imgs/nav-img/nav-3-2.jpg'" alt="">
+                    </div>
+                    <div class="pro-name">小米全面屏电视E55A</div>
+                    <div class="pro-price">1999元</div>
+                  </a>
+                </li>
+                <li class="product">
+                  <a href="" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="'/imgs/nav-img/nav-3-3.png'" alt="">
+                    </div>
+                    <div class="pro-name">小米电视4A 32英寸</div>
+                    <div class="pro-price">699元</div>
+                  </a>
+                </li>
+                <li class="product">
+                  <a href="" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="'/imgs/nav-img/nav-3-4.jpg'" alt="">
+                    </div>
+                    <div class="pro-name">小米电视4A 55英寸</div>
+                    <div class="pro-price">1799元</div>
+                  </a>
+                </li>
+                <li class="product">
+                  <a href="" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="'/imgs/nav-img/nav-3-5.jpg'" alt="">
+                    </div>
+                    <div class="pro-name">小米电视4A 65英寸</div>
+                    <div class="pro-price">2699元</div>
+                  </a>
+                </li>
+                <li class="product">
+                  <a href="" target="_blank">
+                    <div class="pro-img">
+                      <img v-lazy="'/imgs/nav-img/nav-3-6.png'" alt="">
+                    </div>
+                    <div class="pro-name">查看全部</div>
+                    <div class="pro-price">查看全部</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="header-serchbar">
@@ -165,76 +222,76 @@ export default {
     .header-menu {
       display: inline-block;
       width: 643px;
-      padding-left: 209px;
-      .item-menu {
+      padding-left: 209px;  
+      .item-menu{
         display: inline-block;
         color: #333333;
         font-weight: bold;
         font-size: 16px;
         line-height: 112px;
         margin-left: 20px;
-      }
-      span {
-        cursor: pointer;
-      }
-      &:hover {
-        color: $colorA;
-        .children {
-          height: 220px;
-          opacity: 1;
+        span {
+          cursor: pointer;
         }
-      }
-      .children {
-        position: absolute;
-        top: 112px;
-        left:0;
-        width:1226px;
-        height:0;
-        opacity:0;
-        overflow:hidden;
-        border-top: 1px solid #e5e5e5;
-        box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.11);
-        z-index: 10;
-        transition: all 0.5s;
-        .product {
-          position: relative;
-          float: left;
-          width: 16.6%;
-          height: 220px;
-          font-size: 12px;
-          line-height: 12px;
-          text-align: center;
-          a {
-            display: inline-block;
-          }
-          img {
-            width: auto;
-            height: 111px;
-            margin-top: 26px;
-          }
-          .pro-img {
-            height: 137px;
-          }
-          .pro-name {
-            font-weight: bold;
-            margin-top: 19px;
-            margin-bottom: 8px;
-            color: $colorB;
-          }
-          .pro-price {
-            color: $colorA;
-          }
-          &:before {
-            content: " ";
-            position: absolute;
-            top: 28px;
-            right: 0;
-            border-left: 1px solid $colorF;
-            height: 100px;
-            width: 1px;
-          }
-          &:last-child:before {
-            display: none;
+        &:hover{
+          color: $colorA;
+          .children {
+            height: 220px;
+            opacity: 1; 
+          } 
+        }
+        .children {
+          position: absolute;
+          top: 112px;
+          left:0;
+          width:1226px;
+          height:0;
+          opacity:0;
+          overflow:hidden;
+          border-top: 1px solid #e5e5e5;
+          box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.11);
+          z-index: 10;
+          transition: all 0.5s;
+          .product {
+            position: relative;
+            float: left;
+            width: 16.6%;
+            height: 220px;
+            font-size: 12px;
+            line-height: 12px;
+            text-align: center;
+            a {
+              display: inline-block;
+            }
+            img {
+              width: auto;
+              height: 111px;
+              margin-top: 26px;
+            }
+            .pro-img {
+              height: 137px;
+            }
+            .pro-name {
+              font-weight: bold;
+              margin-top: 19px;
+              margin-bottom: 8px;
+              color: $colorB;
+            }
+            .pro-price {
+              color: $colorA;
+            }
+            &:before {
+              content: " ";
+              position: absolute;
+              top: 28px;
+              right: 0;
+              border-left: 1px solid $colorF;
+              height: 100px;
+              width: 1px;
+            }
+            &:last-child:before {
+              display: none;
+            }
           }
         }
       }
