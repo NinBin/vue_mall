@@ -1,6 +1,6 @@
 <template>
     <div class="text">
-        <service-bar>dfdf</service-bar>
+        <service-bar></service-bar>
     </div>
 </template>
 <script>
