@@ -7,10 +7,10 @@
     background-color: $colorI;
     opacity: 0.5;
   }
-  &.slide-enter-active{
+  &.slide-enter-to{
     top:0;
   }
-  &.slide-leave-active{
+  &.slide-leave-to{
     top:-100%;
   }
   &.slide-enter{
@@ -19,13 +19,14 @@
   .modal-dialog{
     @include position(absolute,40%,50%,660px,auto);
     background-color: $colorG;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);//往左往上位移一半
     .modal-header{
       height:60px;
       background-color: $colorJ;
       padding:0 25px;
       line-height: 60px;
       font-size:$fontI;
+      opacity: 0.5;
       .icon-close{
         @include positionImg(absolute,23px,25px,14px,14px,'/imgs/icon-close.png');
         transition: transform .3s;

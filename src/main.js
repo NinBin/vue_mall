@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router.js'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-
+import VueLazyLoad from 'vue-lazyload'
 Vue.config.productionTip = false
 // const mock = false;
 // if(mock){
@@ -28,6 +28,10 @@ axios.interceptors.response.use(function(response){
 });
 
 Vue.use(VueAxios,axios);
+Vue.use(VueLazyLoad,{
+  loading:''
+})
+
 new Vue({
   router,
   render: h => h(App),

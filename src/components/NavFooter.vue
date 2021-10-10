@@ -44,12 +44,12 @@
         span{
             margin:0 10px;
         }
-        margin-bottom:13px;
+            margin-bottom:13px;
         }
         .copyright{
-        .domain{
-            color:#FF6600;
-        }
+            .domain{
+                color:#FF6600;
+            }
         }
     }
 </style>
